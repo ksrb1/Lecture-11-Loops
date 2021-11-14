@@ -1,0 +1,113 @@
+5 stars decending
+
+int i = 5;   
+    while (i > 0) {
+        int j = i;
+        while (j > 0) {
+            cout << "*";
+            j--;
+        }
+        cout << endl;
+        i--;
+    }
+
+5 stars acending
+
+    int i = 0;
+    while (i < 5) {
+        int j = 0;
+        while (j <= i) {
+            cout << "*";
+            j++;
+        }
+        cout << endl;
+        i++;
+    }
+    
+    
+decending and acending
+
+    int i = 5;
+    while (i > 0) {
+        int j = i;
+        while (j > 0) {
+            cout << "*";
+            j--;
+        }
+        cout << endl;
+        i--;
+    }
+    int x = 0;
+    while (x < 5) {
+        int y = 0;
+        while (y <= x) {
+            cout << "*";
+            y++;
+        }
+        cout << endl;
+        x++;
+    }
+
+factorial
+
+    int userInput{};
+    int sum{1};
+
+    cout << "Enter a number too see its factorial" << endl;
+    cin >> userInput;
+
+    while (cin.fail()) {
+        cout << "Invalid input.\nPlease enter a input." << endl;
+        cin.clear();
+        cin.ignore(1000, '\n');
+        cin >> userInput;
+    }
+
+    while (userInput > 0) {
+        sum *= userInput;
+        userInput--;
+
+    }
+
+    cout << sum;
+
+while timestable
+
+    int y;
+    int x = 0;
+    cout << "Enter a number you want the table of: " << endl;
+    cin >> y;
+    while (cin.fail())
+    {
+        cin.clear();
+        cin.ignore(1000, '\n');
+        cout << "Invalid command enter the number again: " << endl;
+        cin >> y;
+    }
+    while (x <= 10)
+    {
+        cout << y << " x " << x << " = " << y * x << endl;
+        x++;
+    }
+    return 0;
+    
+times table but with a stop
+
+    int y;
+    int a;
+    cout << "Enter a number you want the table of: " << endl;
+    cin >> y;
+    cout << "Enter on what number the table should stop on: " << endl;
+    cin >> a;
+    while (cin.fail())
+    {
+        cout << "Invalid command enter the number again: " << endl;
+        cin >> y;
+    }
+    for (int x = 0; x <= a; x++)
+    {
+        cout << y << " x " << x << " = " << y * x << endl;
+
+    }
+    
+    return 0;
